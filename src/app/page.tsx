@@ -21,8 +21,7 @@ const PATHWAY = [
     grades: "Classes 1–5",
     focus: "Build reading, writing, and number sense with gentle, playful practice.",
     subjects: ["English", "Hindi", "Maths", "EVS", "Science basics"],
-    image:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&q=80&auto=format&fit=crop",
+    image: "/students-group.png",
     accent: "bg-brand-sun text-brand-ink",
   },
   {
@@ -30,8 +29,7 @@ const PATHWAY = [
     grades: "Classes 6–8",
     focus: "Strengthen concepts, habits, and confidence before board years begin.",
     subjects: ["Maths", "Science", "English", "Social Studies", "Hindi"],
-    image:
-      "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=900&q=80&auto=format&fit=crop",
+    image: "/classroom-desk.png",
     accent: "bg-brand-sky text-white",
   },
   {
@@ -39,8 +37,7 @@ const PATHWAY = [
     grades: "Classes 9–12",
     focus: "Exam-ready depth, mocks, and clear guidance for boards and beyond.",
     subjects: ["Maths", "Physics", "Chemistry", "Biology", "English", "Commerce"],
-    image:
-      "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&q=80&auto=format&fit=crop",
+    image: "/classroom-wide.png",
     accent: "bg-primary text-primary-foreground",
   },
 ];
@@ -49,7 +46,8 @@ const FEATURES = [
   {
     icon: GraduationCap,
     title: "Experienced Faculty",
-    description: "Subject experts who teach Classes 1–12 with patience and clarity.",
+    description:
+      "Led by Jyoti — B.Com, M.Com, B.Ed, CTET Qualified. Subject experts who teach Classes 1–12 with patience and clarity.",
   },
   {
     icon: Users,
@@ -74,39 +72,33 @@ const TESTIMONIALS = [
     role: "Student, Class 10",
     quote:
       "The doubt-clearing sessions made all the difference. My math scores went up two grades in one term.",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&q=80&auto=format&fit=crop",
   },
   {
     name: "Anjali Mehta",
     role: "Parent",
     quote:
       "Small batches mean the teachers actually know my son by name. The weekly progress reports keep us in the loop.",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&q=80&auto=format&fit=crop",
   },
   {
     name: "Rohan Kapoor",
     role: "Student, Class 12",
     quote:
       "Coming here through boards was the best call. Mock tests felt tougher than the real exam — in a good way.",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&q=80&auto=format&fit=crop",
   },
 ];
 
 const GALLERY = [
   {
-    src: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=900&q=80&auto=format&fit=crop",
-    alt: "Open books and study materials",
+    src: "/whiteboard.png",
+    alt: "Classroom whiteboard at Dhariye Classes",
   },
   {
-    src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&q=80&auto=format&fit=crop",
-    alt: "Students collaborating in class",
+    src: "/hero.png",
+    alt: "Students learning together at Dhariye Classes",
   },
   {
-    src: "https://images.unsplash.com/photo-1588072432836-e10032774350?w=900&q=80&auto=format&fit=crop",
-    alt: "Classroom whiteboard session",
+    src: "/classroom-wide.png",
+    alt: "Classroom at Dhariye Classes",
   },
 ];
 
@@ -118,7 +110,7 @@ export default function LandingPage() {
       {/* Hero — brand first, full-bleed image */}
       <section className="relative isolate min-h-[100svh] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1800&q=80&auto=format&fit=crop"
+          src="/hero.png"
           alt="Students learning together at Dhariye Classes"
           fill
           priority
@@ -166,7 +158,7 @@ export default function LandingPage() {
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 md:items-center md:py-24">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=1000&q=80&auto=format&fit=crop"
+              src="/classroom.png"
               alt="Attentive students in a Dhariye Classes classroom"
               fill
               className="object-cover"
@@ -334,14 +326,11 @@ export default function LandingPage() {
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <footer className="flex items-center gap-3">
-                  <div className="relative size-11 overflow-hidden rounded-full ring-2 ring-brand-sky/40">
-                    <Image
-                      src={t.image}
-                      alt={t.name}
-                      fill
-                      className="object-cover"
-                      sizes="44px"
-                    />
+                  <div className="flex size-11 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-semibold text-primary-foreground ring-2 ring-brand-sky/40">
+                    {t.name
+                      .split(" ")
+                      .map((word) => word[0])
+                      .join("")}
                   </div>
                   <div>
                     <p className="text-sm font-medium text-brand-ink">{t.name}</p>
@@ -372,15 +361,28 @@ export default function LandingPage() {
                 <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-secondary text-primary">
                   <MapPin className="size-5" />
                 </span>
-                <span className="pt-2">123 Education Lane, Sector 12, Your City</span>
+                <span className="pt-2">
+                  1/11 Rani Garden,
+                  <br />
+                  Balaji Properties
+                  <br />
+                  Main Gali,
+                  <br />
+                  East Delhi-110031
+                </span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-secondary text-primary">
                   <Phone className="size-5" />
                 </span>
-                <a href="tel:+911234567890" className="pt-2 hover:underline">
-                  +91 12345 67890
-                </a>
+                <span className="flex flex-col pt-2">
+                  <a href="tel:+918368561393" className="hover:underline">
+                    8368561393
+                  </a>
+                  <a href="tel:+919625793445" className="hover:underline">
+                    9625793445
+                  </a>
+                </span>
               </div>
               <div className="flex items-start gap-3">
                 <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-secondary text-primary">
@@ -411,7 +413,7 @@ export default function LandingPage() {
             <Button
               className="relative mt-8 h-11 bg-brand-sun text-brand-ink hover:bg-brand-sun/90"
               nativeButton={false}
-              render={<a href="tel:+911234567890" />}
+              render={<a href="tel:+918368561393" />}
             >
               Call now
             </Button>
