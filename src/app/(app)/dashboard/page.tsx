@@ -85,7 +85,7 @@ export default async function DashboardPage() {
           Dashboard
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          Today at Dhariye Classes
+          Today at Dhairye Classes
         </p>
       </div>
 

@@ -19,9 +19,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dhariye Classes | Coaching for Class 1–12",
+  title: "Dhairye Classes | Coaching for Class 1–12",
   description:
-    "Dhariye Classes — result-oriented coaching for Classes 1 to 12 with experienced faculty and small batch sizes.",
+    "Dhairye Classes — result-oriented coaching for Classes 1 to 12 with experienced faculty and small batch sizes.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

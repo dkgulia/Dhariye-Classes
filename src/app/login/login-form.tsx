@@ -16,7 +16,7 @@ export function LoginForm() {
           Admin
         </p>
         <h1 className="mt-1 font-display text-2xl font-semibold tracking-tight">
-          Sign in to Dhariye Classes
+          Sign in to Dhairye Classes
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
           Manage batches, students, attendance, and fees.

@@ -90,15 +90,15 @@ const TESTIMONIALS = [
 const GALLERY = [
   {
     src: "/whiteboard.png",
-    alt: "Classroom whiteboard at Dhariye Classes",
+    alt: "Classroom whiteboard at Dhairye Classes",
   },
   {
     src: "/hero.png",
-    alt: "Students learning together at Dhariye Classes",
+    alt: "Students learning together at Dhairye Classes",
   },
   {
     src: "/classroom-wide.png",
-    alt: "Classroom at Dhariye Classes",
+    alt: "Classroom at Dhairye Classes",
   },
 ];
 
@@ -111,7 +111,7 @@ export default function LandingPage() {
       <section className="relative isolate min-h-[100svh] overflow-hidden">
         <Image
           src="/hero.png"
-          alt="Students learning together at Dhariye Classes"
+          alt="Students learning together at Dhairye Classes"
           fill
           priority
           className="animate-ken-slow object-cover"
@@ -122,7 +122,7 @@ export default function LandingPage() {
 
         <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-4 pb-16 pt-28 sm:px-6 sm:pb-20 md:justify-center md:pb-24">
           <p className="animate-fade-up font-display text-5xl font-semibold tracking-tight text-white drop-shadow-sm sm:text-6xl md:text-7xl lg:text-8xl">
-            Dhariye Classes
+            Dhairye Classes
           </p>
           <h1 className="animate-fade-up delay-1 mt-4 max-w-xl font-display text-xl font-medium leading-snug text-brand-sun sm:text-2xl md:text-3xl">
             Strong foundations for Classes 1–12
@@ -159,7 +159,7 @@ export default function LandingPage() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
             <Image
               src="/classroom.png"
-              alt="Attentive students in a Dhariye Classes classroom"
+              alt="Attentive students in a Dhairye Classes classroom"
               fill
               className="object-cover"
               sizes="(min-width: 768px) 50vw, 100vw"
@@ -215,7 +215,7 @@ export default function LandingPage() {
                 <div className="relative mb-5 aspect-[5/3] overflow-hidden rounded-2xl">
                   <Image
                     src={stage.image}
-                    alt={`${stage.band} — ${stage.grades} at Dhariye Classes`}
+                    alt={`${stage.band} — ${stage.grades} at Dhairye Classes`}
                     fill
                     className="object-cover transition duration-500 group-hover:scale-105"
                     sizes="(min-width: 1024px) 33vw, 100vw"
@@ -273,7 +273,7 @@ export default function LandingPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-              Life at Dhariye Classes
+              Life at Dhairye Classes
             </h2>
             <p className="mt-3 text-muted-foreground">
               Bright classrooms, focused study hours, and a place students look forward to.
@@ -389,10 +389,10 @@ export default function LandingPage() {
                   <Mail className="size-5" />
                 </span>
                 <a
-                  href="mailto:info@dhariyeclasses.com"
+                  href="mailto:info@dhairyeclasses.com"
                   className="pt-2 break-all hover:underline"
                 >
-                  info@dhariyeclasses.com
+                  info@dhairyeclasses.com
                 </a>
               </div>
             </div>
@@ -425,9 +425,9 @@ export default function LandingPage() {
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-8 text-sm text-white/70 sm:flex-row sm:px-6">
           <div className="flex items-center gap-2 font-display font-semibold text-white">
             <GraduationCap className="size-5 text-brand-sun" />
-            Dhariye Classes
+            Dhairye Classes
           </div>
-          <p>© {new Date().getFullYear()} Dhariye Classes. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Dhairye Classes. All rights reserved.</p>
           <Link href="/login" className="hover:text-white hover:underline">
             Admin Login
           </Link>

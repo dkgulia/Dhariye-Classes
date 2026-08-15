@@ -44,7 +44,7 @@ export function AppSidebar() {
           </span>
           <div className="min-w-0 leading-tight">
             <div className="truncate font-display text-base font-semibold">
-              Dhariye Classes
+              Dhairye Classes
             </div>
             <div className="text-[11px] text-muted-foreground">Admin</div>
           </div>

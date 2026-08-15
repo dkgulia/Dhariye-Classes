@@ -32,7 +32,7 @@ export function SiteHeader() {
           <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-brand-sun text-brand-ink shadow-sm">
             <GraduationCap className="size-5" />
           </span>
-          <span className="truncate">Dhariye Classes</span>
+          <span className="truncate">Dhairye Classes</span>
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">
@@ -71,7 +71,7 @@ export function SiteHeader() {
           />
           <SheetContent side="right" className="bg-background">
             <SheetHeader>
-              <SheetTitle className="font-display">Dhariye Classes</SheetTitle>
+              <SheetTitle className="font-display">Dhairye Classes</SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-4 p-4">
               {NAV_LINKS.map((link) => (
