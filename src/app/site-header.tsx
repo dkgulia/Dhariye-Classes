@@ -12,13 +12,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-const NAV_LINKS = [
-  { href: "#why-us", label: "Why Us" },
-  { href: "#pathway", label: "Pathway" },
-  { href: "#life", label: "Campus Life" },
-  { href: "#contact", label: "Contact" },
-];
-
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
@@ -34,18 +27,6 @@ export function SiteHeader() {
           </span>
           <span className="truncate">Dhairye Classes</span>
         </Link>
-
-        <nav className="hidden items-center gap-7 md:flex">
-          {NAV_LINKS.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm text-white/80 transition-colors hover:text-white"
-            >
-              {link.label}
-            </a>
-          ))}
-        </nav>
 
         <div className="hidden md:block">
           <Button
@@ -73,26 +54,14 @@ export function SiteHeader() {
             <SheetHeader>
               <SheetTitle className="font-display">Dhairye Classes</SheetTitle>
             </SheetHeader>
-            <nav className="flex flex-col gap-4 p-4">
-              {NAV_LINKS.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className="text-sm font-medium"
-                >
-                  {link.label}
-                </a>
-              ))}
-              <Button
-                className="bg-primary text-primary-foreground"
-                nativeButton={false}
-                render={<Link href="/login" />}
-                onClick={() => setOpen(false)}
-              >
-                Admin Login
-              </Button>
-            </nav>
+            <Button
+              className="bg-primary text-primary-foreground"
+              nativeButton={false}
+              render={<Link href="/login" />}
+              onClick={() => setOpen(false)}
+            >
+              Admin Login
+            </Button>
           </SheetContent>
         </Sheet>
       </div>
